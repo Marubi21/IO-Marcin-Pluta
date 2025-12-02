@@ -14,8 +14,13 @@ bool czy_bezkwadratowa(int n) {
 int main() {
     int x;
     cin >> x;
-    cout << x << "jest ";
 
+    if (x <= 0) {
+        cout << "Prosze wpisac liczbe dodatnia" << endl;
+        return 0;
+    }
+
+    cout << x << " jest ";
     if (czy_bezkwadratowa(x)) {
         cout << "bezkwadratowa";
     } else {
