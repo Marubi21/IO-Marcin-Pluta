@@ -2,8 +2,12 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << n << endl;
+    int x;
+    cin >> x;
+    if (x <= 0) {
+        cout << "Prosze wpisac liczbe dodatnia" << endl;
+        return 0;
+    }
+    cout << x << endl;
     return 0;
 }
